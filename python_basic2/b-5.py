@@ -55,15 +55,14 @@ def minimum_value():
 
 # リストの平均値を計算
 def average_calc():
-    result = 0
-    result = sum_value() / len(calc_app())
-    return round(result, 1)
+    result = sum_value() // len(calc_app())
+    return result
 
 
-print(sum_value())
-print(maximum_value())
-print(minimum_value())
-print(average_calc())
+print(f"合計値: {sum_value()}")
+print(f"最大値: {maximum_value()}")
+print(f"最小値: {minimum_value()}")
+print(f"平均値: {average_calc()}")
 
 # いろいろな桁数の数が出たけれど、最後に入力した数が出ない
 # if not number == " ":
